@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Salasana</string>
+    <string name="domain_edit">Website Domain (example.com)</string>
+    <string name="pass_edit">Your Master password</string>
+    <string name="generate_button">Generate Password</string>
+    <string name="reset_button">Reset</string>
+    <string name="notification_title">Password in clipboard</string>
+    <string name="notification_content">Swipe this notification to delete it from the clipboard!</string>
+    <string name="notification_id">1234</string>
+    <string name="footer_text">Based on <a href="http://angel.net/~nic/passwd.current.html">Nic Wolff\'s password generator</a></string>
+    <string name="about_title">About Salasana</string>
+    <string name="about_text">
+        "Salasana Android © 2016 Xavier Vello: https://github.com/xvello/salasana-android\n\n"
+        "Based on Nic Wolff's password generator (http://angel.net/~nic/passwd.current.html) version 11 apr 2014\n\n"
+        "Icon based on network-vpn.svg from the Oxygen Project, licensed under LGPLv3 (http://www.gnu.org/licenses/lgpl-3.0.txt)\n\n"
+    </string>
+    <string name="send_intent_name">Generate Password</string>
+    <string name="about_action_title">About Salasana</string>
+    <string name="intro_text">This form will generate a unique password for this domain and paste it in your clipboard. After you use it, dismiss the notification to delete it from the clipboard.</string>
+    <string name="domain_hint_text"><b>Hint:</b> you can pre-fill the domain field by calling Salasana from your browser\'s share menu.</string>
+    <string name="title_activity_test">TestActivity</string>
+</resources>

@@ -1,8 +1,6 @@
 Salasana Password Generator - Android
 ==================
 
-[Install it on addons.mozilla.org](https://addons.mozilla.org/fr/firefox/addon/domain-password-generator/)
-
 This Android app allows you to generate site-specific password from a single master password. This avoids the hassle of remembering a unique password for each website you sign up to.
 
 ##Why should I use it ?##

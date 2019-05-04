@@ -1,5 +1,5 @@
 [![Firefox port](https://img.shields.io/badge/Ported%20on-Firefox-orange.svg?style=popout-square&logo=mozilla-firefox)](https://github.com/xvello/salasana-webextension)
-[![Bootstrap version](https://img.shields.io/badge/Ported%20on-Bootstrap-purple.svg?style=popout-square&logo=bootstrap)](https://github.com/xvello/salasana-android)
+[![Bootstrap version](https://img.shields.io/badge/Ported%20on-Bootstrap-purple.svg?style=popout-square&logo=bootstrap)](https://github.com/xvello/html-password-generator)
 
 
 # Salasana Password Generator - Android

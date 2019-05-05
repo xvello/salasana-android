@@ -18,5 +18,5 @@
     <string name="about_action_title">About Salasana</string>
     <string name="intro_text">This form will generate a unique password for this domain and paste it in your clipboard. After you use it, dismiss the notification to delete it from the clipboard.</string>
     <string name="domain_hint_text"><b>Hint:</b> you can pre-fill the domain field by calling Salasana from your browser\'s share menu.</string>
-    <string name="title_activity_test">TestActivity</string>
+    <string name="clipboard_chan_name">Clipboard</string>
 </resources>

@@ -8,9 +8,11 @@ import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import androidx.core.app.NotificationCompat;
@@ -76,10 +78,30 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.action_about) {
-            startActivity(new Intent(this, AboutActivity.class));
+        switch (item.getItemId()) {
+            case R.id.action_about:
+                startActivity(new Intent(this, AboutActivity.class));
+                break;
+            case R.id.action_night:
+                switchNightMode();
+                break;
         }
         return true;
+    }
+
+    private void switchNightMode() {
+        SharedPreferences prefs = getApplicationContext().getSharedPreferences(getString(R.string.pref_name), Context.MODE_PRIVATE);
+        boolean isNight = !prefs.getBoolean(getString(R.string.pref_night_name), false);
+        prefs.edit()
+             .putBoolean(getString(R.string.pref_night_name), isNight)
+             .apply();
+
+        if (isNight){
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        } else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        }
+        this.recreate();
     }
 
     // http://stackoverflow.com/questions/32586337/how-to-encode-pass-with-sha1-and-base64

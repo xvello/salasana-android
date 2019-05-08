@@ -1,6 +1,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"  >
     <item
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/action_night"
+        android:icon="@drawable/change_colors"
+        android:title="@string/change_colors_title"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/action_about"
         android:icon="@drawable/about_icon"
         android:title="@string/about_action_title"

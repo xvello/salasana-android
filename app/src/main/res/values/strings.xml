@@ -1,4 +1,7 @@
 <resources>
+    <string name="pref_name">net.xvello.salasana</string>
+    <string name="pref_night_name">night_mode</string>
+
     <string name="app_name">Salasana</string>
     <string name="domain_edit">Website Domain (example.com)</string>
     <string name="pass_edit">Your Master password</string>
@@ -18,5 +21,6 @@
     <string name="about_action_title">About Salasana</string>
     <string name="intro_text">This form will generate a unique password for this domain and paste it in your clipboard. After you use it, dismiss the notification to delete it from the clipboard.</string>
     <string name="domain_hint_text"><b>Hint:</b> you can pre-fill the domain field by calling Salasana from your browser\'s share menu.</string>
-    <string name="title_activity_test">TestActivity</string>
+    <string name="clipboard_chan_name">Clipboard</string>
+    <string name="change_colors_title">Change color scheme</string>
 </resources>

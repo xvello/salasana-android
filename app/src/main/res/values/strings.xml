@@ -12,11 +12,9 @@
     <string name="notification_id">1234</string>
     <string name="footer_text">Based on <a href="http://angel.net/~nic/passwd.current.html">Nic Wolff\'s password generator</a></string>
     <string name="about_title">About Salasana</string>
-    <string name="about_text">
-        "Salasana Android © 2016 Xavier Vello: https://github.com/xvello/salasana-android\n\n"
-        "Based on Nic Wolff's password generator (http://angel.net/~nic/passwd.current.html) version 11 apr 2014\n\n"
-        "Icon based on network-vpn.svg from the Oxygen Project, licensed under LGPLv3 (http://www.gnu.org/licenses/lgpl-3.0.txt)\n\n"
-    </string>
+    <string name="about_text1">Salasana Android © 2016 Xavier Vello: https://github.com/xvello/salasana-android</string>
+    <string name="about_text2">Based on Nic Wolff\'s password generator (http://angel.net/~nic/passwd.current.html) version 11 apr 2014</string>
+    <string name="about_text3">Icon based on network-vpn.svg from the Oxygen Project, licensed under LGPLv3 (http://www.gnu.org/licenses/lgpl-3.0.txt)</string>
     <string name="send_intent_name">Generate Password</string>
     <string name="about_action_title">About Salasana</string>
     <string name="intro_text">This form will generate a unique password for this domain and paste it in your clipboard. After you use it, dismiss the notification to delete it from the clipboard.</string>

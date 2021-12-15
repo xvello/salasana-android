@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,6 +17,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
         android:paddingBottom="12dp"
         android:text="@string/intro_text"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
@@ -25,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/about_text"
-        android:paddingBottom="12dp"
+        android:layout_marginBottom="15dp"
         android:text="@string/domain_hint_text"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
@@ -42,6 +45,7 @@
         android:id="@+id/pass_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
         android:layout_below="@+id/domain_edit"
         android:layout_alignParentStart="true"
         android:ems="10"
@@ -53,6 +57,7 @@
         style="@style/Base.Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
         android:layout_below="@+id/pass_edit"
         android:layout_alignParentStart="true"
         android:onClick="generatePassword"
@@ -80,6 +85,6 @@
         android:alpha="0.1"
         android:contentDescription="Background image"
         android:src="@drawable/notification_icon"
-        android:tint="@color/tintBackgroundImage" />
+        app:tint="@color/tintBackgroundImage" />
 
 </RelativeLayout>

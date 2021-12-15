@@ -14,8 +14,7 @@ public class SalasanaApplication extends Application {
         SharedPreferences prefs = getApplicationContext().getSharedPreferences(getString(R.string.pref_name), Context.MODE_PRIVATE);
         if (!prefs.contains(getString(R.string.pref_night_name))) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
-        }
-        if (prefs.getBoolean(getString(R.string.pref_night_name), false)){
+        } else if (prefs.getBoolean(getString(R.string.pref_night_name), false)) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         } else {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);

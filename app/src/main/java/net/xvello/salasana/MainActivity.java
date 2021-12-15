@@ -13,6 +13,7 @@ import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
 import androidx.core.app.NotificationCompat;
@@ -78,25 +79,24 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_about:
-                startActivity(new Intent(this, AboutActivity.class));
-                break;
-            case R.id.action_night:
-                switchNightMode();
-                break;
+        if (item.getItemId() == R.id.action_about) {
+            startActivity(new Intent(this, AboutActivity.class));
+        } else if (item.getItemId() == R.id.action_night) {
+            switchNightMode();
         }
         return true;
     }
 
     private void switchNightMode() {
-        SharedPreferences prefs = getApplicationContext().getSharedPreferences(getString(R.string.pref_name), Context.MODE_PRIVATE);
-        boolean isNight = !prefs.getBoolean(getString(R.string.pref_night_name), false);
-        prefs.edit()
-             .putBoolean(getString(R.string.pref_night_name), isNight)
-             .apply();
+        boolean wantNight = (getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK) != Configuration.UI_MODE_NIGHT_YES;
 
-        if (isNight){
+        getApplicationContext()
+                .getSharedPreferences(getString(R.string.pref_name), Context.MODE_PRIVATE)
+                .edit()
+                .putBoolean(getString(R.string.pref_night_name), wantNight)
+                .apply();
+
+        if (wantNight) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         } else {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
